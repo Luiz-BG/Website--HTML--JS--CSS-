@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <i class="material-icons" id="burguer" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="">Cadastro</a></li>
+                <li><a href="">Login</a></li>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Sair</a></li>
+            </ul>
+        </menu>
+    </header>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <h3>Dados Pessoais</h3>
+            <p>
+                <label for="inome">Nome</label><br>
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required>
+            </p>
+            <p>
+                <label for="iemail">E-mail</label><br>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="itel">Telefone</label><br>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(xx) xxxx-xxxx">
+            </p>
+            <p>
+                <label for="isen">Senha</label><br>
+                <input type="password" name="sen" id="isen" required placeholder="*********" minlength="6">
+            </p>
+            <p>
+                <label for="csen">Confirmar Senha</label><br>
+                <input type="password" name="csen" id="csen" required placeholder="**********" minlength="6">
+            </p>
+            <input type="checkbox" name="lembrete" id="lembrete">Lembrar Senha?
+            <p>
+                <input type="submit" value="Enviar" class="botaoForm">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

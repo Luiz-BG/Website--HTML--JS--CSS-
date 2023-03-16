@@ -1,0 +1,96 @@
+@charset "UTF-8";
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+html, body{
+    background-color: rgb(255, 255, 255);
+}
+header {
+    background-color: grey;
+}
+header > h1{
+    padding: 10px;
+    text-align: center;
+}
+i#burguer {
+    background-color: darkgray;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    /* Animação ao passar o mouse
+    transition: all 0.3s;*/
+}
+i#burguer:hover {
+    background-color: #397e7c;
+    cursor: pointer;
+    /* Animação ao passar o mouse
+    transform: translateY(+10px);*/
+}
+menu{
+    display: none;
+}
+menu > ul{
+    list-style-type: none;
+}
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: lightgrey;
+    color: white;
+    text-align: center;
+    border-top: 2px solid grey;
+}
+menu > ul > li > a:hover {
+    background-color: #397e7c;
+}
+main{
+    width: 90vw;
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+article > h2 {
+    padding-bottom: 10px;
+}
+article > p {
+    text-align: justify;
+    margin-bottom: 10px;
+    text-indent: 20px;
+}
+
+.botaoForm {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #49a09d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.botaoForm:hover {
+    background-color: white;
+    color: #49a09d;
+}
+form > fieldset {
+    background-color: #397e7c;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+form > h3{
+    text-align: center;
+    color: white;
+}
+form > fieldset > p{
+    margin: 20px;
+}
+form > fieldset > p > input {
+    margin: 10px;
+}
