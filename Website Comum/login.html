@@ -26,28 +26,16 @@
         <fieldset>
             <h2>Dados Pessoais</h2>
             <p>
-                <label for="inome">Nome</label><br>
-                <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required>
+                <label for="lemail">E-mail</label><br>
+                <input type="email" name="lemail" id="lemail" autocomplete="email" required>
             </p>
             <p>
-                <label for="iemail">E-mail</label><br>
-                <input type="email" name="email" id="iemail" autocomplete="email" required>
-            </p>
-            <p>
-                <label for="itel">Telefone</label><br>
-                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(xx) xxxx-xxxx">
-            </p>
-            <p>
-                <label for="isen">Senha</label><br>
-                <input type="password" name="sen" id="isen" required placeholder="*********" minlength="6">
-            </p>
-            <p>
-                <label for="csen">Confirmar Senha</label><br>
-                <input type="password" name="csen" id="csen" required placeholder="**********" minlength="6">
+                <label for="lsen">Senha</label><br>
+                <input type="password" name="lsen" id="lsen" required placeholder="*********" minlength="6">
             </p>
             <input type="checkbox" name="lembrete" id="lembrete">Lembrar Senha?
             <p>
-                <input type="submit" value="Cadastrar" class="botaoForm" onclick="cadastrar()">
+                <input type="submit" value="login" class="botaoForm" onclick="login()">
             </p>
         </fieldset>
     </form>
